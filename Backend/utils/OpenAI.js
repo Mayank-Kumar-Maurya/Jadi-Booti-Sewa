@@ -11,7 +11,8 @@ let textAi = async(message)=>
 {
     const response = await ai.chat.completions.create(
         {
-            messages: [{role: "user", content: `As a medical expert tell the user about the urgent treatment, cure, medicines, ointment and consultant without any 'unnessesary speech' about the problem , "${message}"`}],
+            messages: [{role: "system", content: "As a medical expert tell the user about the urgent treatment, cure, medicines, ointment and consultant without any 'unnessesary speech' about the problem given in this prompt"},
+                {role: "user", content: `prompt: "${message}"`}],
             model: "gpt-4.1-mini",
         }
     );
