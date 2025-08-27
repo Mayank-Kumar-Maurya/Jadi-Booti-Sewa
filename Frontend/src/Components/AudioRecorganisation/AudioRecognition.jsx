@@ -57,7 +57,7 @@ function AudioRecognition() {
           {/* {voiceOn === true? "mic is open please speak": "mic is off"} */}
           <div className='d-flex justify-content-center m-0'>
             <div className='col-8 col-lg-4 col-md-6 col-sm-8'>
-              <textarea className="form-control text " onChange={(e) => setText(e.target.value)} value={text} placeholder='You Said: '></textarea>
+              <textarea className="form-control text border border-success border-2" onChange={(e) => setText(e.target.value)} value={text} placeholder='You Said: '></textarea>
             </div>
           </div>
 
@@ -69,9 +69,9 @@ function AudioRecognition() {
       </div>
 
       <div className='card mb-3' style={{backgroundColor: "unset", border: 0}}>
-        <div className='container card-body  col-11 col-lg-10 col-md-10 col-sm-11 justify-content-center  bg-light rounded-3'>
+        <div className='container card-body border border-dark  col-11 col-lg-10 col-md-10 col-sm-11 justify-content-center  bg-light rounded-3'>
           <h3 >Reply</h3>
-          <pre className='card-text' style={{height: "35vh", fontSize: "1.1em", fontFamily: "'Times New Roman', Times, serif", textAlign: "justify", whiteSpace: "break-spaces"}}>
+          <pre className='card-text ' style={{height: "35vh", fontSize: "1.1em", fontFamily: "'Times New Roman', Times, serif", textAlign: "justify", whiteSpace: "break-spaces"}}>
           {load === true ? <Loading /> : AIres}
           </pre>
         </div>

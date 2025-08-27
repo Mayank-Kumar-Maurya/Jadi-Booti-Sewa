@@ -33,14 +33,14 @@ function Front() {
     <>
       <div className='img'>
         <div className='container d-flex h-50  justify-content-center promptContainer' style={{opacity: "1"}}>
-          <form className="d-flex align-self-center col-10 col-lg-8 col-md-9 col-sm-10" role="search" onSubmit={handleSubmit}>
-          <textarea className="form-control me-2 bs-body-color text-center" value={text} onChange={(e)=> setText(e.target.value)} type="search" placeholder="Your Medical Issue!" aria-label="Search"/>
-          <button className="btn btn-warning" type="submit"><i className="fa-solid fa-stethoscope fa-fade fa-lg"></i></button>
+          <form className="d-flex align-self-center col-10 col-lg-6 col-md-9 col-sm-10" role="search" onSubmit={handleSubmit}>
+          <textarea className="form-control border border-success border-2 me-2 bs-body-color text-center" value={text} onChange={(e)=> setText(e.target.value)} type="search" placeholder="Your Medical Issue!" aria-label="Search"/>
+          <button className="btn btn-warning border border-success border-2" type="submit"><i className="fa-solid fa-stethoscope fa-fade fa-lg"></i></button>
           </form>
         </div>
 
         <div className='card ' style={{backgroundColor: "unset", border: 0}}>
-        <div className='container card-body  col-11 col-lg-10 col-md-10 col-sm-11 justify-content-center  bg-light rounded-3'>
+        <div className='container card-body border border-dark col-11 col-lg-10 col-md-10 col-sm-11 justify-content-center  bg-light rounded-3'>
           <h3 >Reply</h3>
           <pre className='card-text' style={{height: "35vh", fontSize: "1.1em", fontFamily: "'Times New Roman', Times, serif", textAlign: "justify", whiteSpace: "break-spaces"}}>
             <>{load === true ? <Loading /> :  AIres}</>
