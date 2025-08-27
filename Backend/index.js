@@ -15,7 +15,9 @@ app.use(cors({
 }));
 
 
-app.use("/mediReach/api/v1", AIRouter)
+app.use("/mediReach/api/v1", AIRouter);
+
+// // TODO error handling 
 
 
 app.listen(port, ()=>

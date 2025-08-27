@@ -3,6 +3,29 @@
     background-image: url("/main4.jpg");
     background-size: contain;
     background-position:top;
+    z-index: -1;
 
     /* background-repeat: no-repeat; */
 }
+
+
+
+@media(min-width: 1020px)
+{
+    .img{
+        background-image: url("/doct.png");
+        background-size: contain ;
+        background-position:left;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* @media(min-width: 1025px)
+{
+    .img{
+        background-image: url("/main4.2.jpg");
+        background-size: 100vh ;
+        background-position: top;
+    }
+} */
