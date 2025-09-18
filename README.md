@@ -1,6 +1,6 @@
 # 🩺 Jadi-Booti-Sewa Web Application –Summary
 ### 🔍 Overview
-The Jadi~Booti~Sewa web application is a smart, AI-powered medical assistant designed to provide users with instant, personalized healthcare support. It combines text-based medical advice, voice-to-text interaction, and image recognition to diagnose and guide treatment for common health issues — like skin-related conditions, etc.
+The Jadi-Booti-Sewa web application is a smart, AI-powered medical assistant designed to provide users with instant, personalized healthcare support. It combines text-based medical advice, voice-to-text interaction, and image recognition to diagnose and guide treatment for common health issues — like skin-related conditions, etc.
 
 ### 💡 Key Features
 Text-Based Medical Guidance Users can type symptoms or health concerns and receive AI-generated responses including:
